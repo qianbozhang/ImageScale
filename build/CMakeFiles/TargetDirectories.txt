@@ -1,0 +1,3 @@
+/home/zhangqianbo/Desktop/ImageScale/build/CMakeFiles/rebuild_cache.dir
+/home/zhangqianbo/Desktop/ImageScale/build/CMakeFiles/edit_cache.dir
+/home/zhangqianbo/Desktop/ImageScale/build/CMakeFiles/ImgScale.dir

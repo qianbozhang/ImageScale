@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/zhangqianbo/Desktop/ImageScale/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/zhangqianbo/Desktop/ImageScale -I/home/zhangqianbo/Desktop/ImageScale/bicubic -I/home/zhangqianbo/Desktop/ImageScale/bilinear -I/home/zhangqianbo/Desktop/ImageScale/nearest  -g   -o CMakeFiles/ImgScale.dir/main.cpp.o -c /home/zhangqianbo/Desktop/ImageScale/main.cpp",
+  "file": "/home/zhangqianbo/Desktop/ImageScale/main.cpp"
+},
+{
+  "directory": "/home/zhangqianbo/Desktop/ImageScale/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/zhangqianbo/Desktop/ImageScale -I/home/zhangqianbo/Desktop/ImageScale/bicubic -I/home/zhangqianbo/Desktop/ImageScale/bilinear -I/home/zhangqianbo/Desktop/ImageScale/nearest  -g   -o CMakeFiles/ImgScale.dir/nearest/nearest.cpp.o -c /home/zhangqianbo/Desktop/ImageScale/nearest/nearest.cpp",
+  "file": "/home/zhangqianbo/Desktop/ImageScale/nearest/nearest.cpp"
+},
+{
+  "directory": "/home/zhangqianbo/Desktop/ImageScale/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/zhangqianbo/Desktop/ImageScale -I/home/zhangqianbo/Desktop/ImageScale/bicubic -I/home/zhangqianbo/Desktop/ImageScale/bilinear -I/home/zhangqianbo/Desktop/ImageScale/nearest  -g   -o CMakeFiles/ImgScale.dir/bilinear/bilinear.cpp.o -c /home/zhangqianbo/Desktop/ImageScale/bilinear/bilinear.cpp",
+  "file": "/home/zhangqianbo/Desktop/ImageScale/bilinear/bilinear.cpp"
+},
+{
+  "directory": "/home/zhangqianbo/Desktop/ImageScale/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/zhangqianbo/Desktop/ImageScale -I/home/zhangqianbo/Desktop/ImageScale/bicubic -I/home/zhangqianbo/Desktop/ImageScale/bilinear -I/home/zhangqianbo/Desktop/ImageScale/nearest  -g   -o CMakeFiles/ImgScale.dir/bicubic/bicubic.cpp.o -c /home/zhangqianbo/Desktop/ImageScale/bicubic/bicubic.cpp",
+  "file": "/home/zhangqianbo/Desktop/ImageScale/bicubic/bicubic.cpp"
+}
+]

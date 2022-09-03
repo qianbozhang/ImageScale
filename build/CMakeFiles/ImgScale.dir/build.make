@@ -60,54 +60,54 @@ include CMakeFiles/ImgScale.dir/flags.make
 CMakeFiles/ImgScale.dir/main.cpp.o: CMakeFiles/ImgScale.dir/flags.make
 CMakeFiles/ImgScale.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhangqianbo/Desktop/ImageScale/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ImgScale.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImgScale.dir/main.cpp.o -c /home/zhangqianbo/Desktop/ImageScale/main.cpp
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImgScale.dir/main.cpp.o -c /home/zhangqianbo/Desktop/ImageScale/main.cpp
 
 CMakeFiles/ImgScale.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImgScale.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangqianbo/Desktop/ImageScale/main.cpp > CMakeFiles/ImgScale.dir/main.cpp.i
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangqianbo/Desktop/ImageScale/main.cpp > CMakeFiles/ImgScale.dir/main.cpp.i
 
 CMakeFiles/ImgScale.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImgScale.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangqianbo/Desktop/ImageScale/main.cpp -o CMakeFiles/ImgScale.dir/main.cpp.s
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangqianbo/Desktop/ImageScale/main.cpp -o CMakeFiles/ImgScale.dir/main.cpp.s
 
 CMakeFiles/ImgScale.dir/nearest/nearest.cpp.o: CMakeFiles/ImgScale.dir/flags.make
 CMakeFiles/ImgScale.dir/nearest/nearest.cpp.o: ../nearest/nearest.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhangqianbo/Desktop/ImageScale/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ImgScale.dir/nearest/nearest.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImgScale.dir/nearest/nearest.cpp.o -c /home/zhangqianbo/Desktop/ImageScale/nearest/nearest.cpp
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImgScale.dir/nearest/nearest.cpp.o -c /home/zhangqianbo/Desktop/ImageScale/nearest/nearest.cpp
 
 CMakeFiles/ImgScale.dir/nearest/nearest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImgScale.dir/nearest/nearest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangqianbo/Desktop/ImageScale/nearest/nearest.cpp > CMakeFiles/ImgScale.dir/nearest/nearest.cpp.i
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangqianbo/Desktop/ImageScale/nearest/nearest.cpp > CMakeFiles/ImgScale.dir/nearest/nearest.cpp.i
 
 CMakeFiles/ImgScale.dir/nearest/nearest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImgScale.dir/nearest/nearest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangqianbo/Desktop/ImageScale/nearest/nearest.cpp -o CMakeFiles/ImgScale.dir/nearest/nearest.cpp.s
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangqianbo/Desktop/ImageScale/nearest/nearest.cpp -o CMakeFiles/ImgScale.dir/nearest/nearest.cpp.s
 
 CMakeFiles/ImgScale.dir/bilinear/bilinear.cpp.o: CMakeFiles/ImgScale.dir/flags.make
 CMakeFiles/ImgScale.dir/bilinear/bilinear.cpp.o: ../bilinear/bilinear.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhangqianbo/Desktop/ImageScale/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ImgScale.dir/bilinear/bilinear.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImgScale.dir/bilinear/bilinear.cpp.o -c /home/zhangqianbo/Desktop/ImageScale/bilinear/bilinear.cpp
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImgScale.dir/bilinear/bilinear.cpp.o -c /home/zhangqianbo/Desktop/ImageScale/bilinear/bilinear.cpp
 
 CMakeFiles/ImgScale.dir/bilinear/bilinear.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImgScale.dir/bilinear/bilinear.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangqianbo/Desktop/ImageScale/bilinear/bilinear.cpp > CMakeFiles/ImgScale.dir/bilinear/bilinear.cpp.i
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangqianbo/Desktop/ImageScale/bilinear/bilinear.cpp > CMakeFiles/ImgScale.dir/bilinear/bilinear.cpp.i
 
 CMakeFiles/ImgScale.dir/bilinear/bilinear.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImgScale.dir/bilinear/bilinear.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangqianbo/Desktop/ImageScale/bilinear/bilinear.cpp -o CMakeFiles/ImgScale.dir/bilinear/bilinear.cpp.s
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangqianbo/Desktop/ImageScale/bilinear/bilinear.cpp -o CMakeFiles/ImgScale.dir/bilinear/bilinear.cpp.s
 
 CMakeFiles/ImgScale.dir/bicubic/bicubic.cpp.o: CMakeFiles/ImgScale.dir/flags.make
 CMakeFiles/ImgScale.dir/bicubic/bicubic.cpp.o: ../bicubic/bicubic.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhangqianbo/Desktop/ImageScale/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ImgScale.dir/bicubic/bicubic.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImgScale.dir/bicubic/bicubic.cpp.o -c /home/zhangqianbo/Desktop/ImageScale/bicubic/bicubic.cpp
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImgScale.dir/bicubic/bicubic.cpp.o -c /home/zhangqianbo/Desktop/ImageScale/bicubic/bicubic.cpp
 
 CMakeFiles/ImgScale.dir/bicubic/bicubic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImgScale.dir/bicubic/bicubic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangqianbo/Desktop/ImageScale/bicubic/bicubic.cpp > CMakeFiles/ImgScale.dir/bicubic/bicubic.cpp.i
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangqianbo/Desktop/ImageScale/bicubic/bicubic.cpp > CMakeFiles/ImgScale.dir/bicubic/bicubic.cpp.i
 
 CMakeFiles/ImgScale.dir/bicubic/bicubic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImgScale.dir/bicubic/bicubic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangqianbo/Desktop/ImageScale/bicubic/bicubic.cpp -o CMakeFiles/ImgScale.dir/bicubic/bicubic.cpp.s
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangqianbo/Desktop/ImageScale/bicubic/bicubic.cpp -o CMakeFiles/ImgScale.dir/bicubic/bicubic.cpp.s
 
 # Object files for target ImgScale
 ImgScale_OBJECTS = \

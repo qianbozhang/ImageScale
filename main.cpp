@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <cstring>
+#include <stdlib.h>
 
 #include "img_type.h"
 #include "bilinear/bilinear.h"
@@ -20,6 +21,19 @@ int greatest_common_divisor(int a, int b)
         b = temp % b;
     }
     return abs(a);
+}
+
+void convert_to_Arr(ImgRGB** out_Arr, const ImgBuffer in)
+{
+    for(int i = 0; i < in.h; i ++)
+    {
+        for(int j = 0; j < in.w; j++)
+        {
+            out_Arr[i][j].r = in.buf[i * 3 + j];
+            out_Arr[i][j].g = in.buf[i * 3 + j + 1];
+            out_Arr[i][j].b = in.buf[i * 3 + j + 2];
+        }
+    }
 }
 
 int open_input_default(std::string path, ImgBuffer* in)
@@ -45,7 +59,7 @@ int open_input_default(std::string path, ImgBuffer* in)
     return 0;
 }
 
-int save_output_default(std::string path, const ImgBuffer out)
+int save_output_default(std::string path, const ImgBuffer out, ScaleMethod sm)
 {
     if(out.w <= 0 || out.h <= 0 || out.buf == NULL) {
         printf("invalid buffer \n");
@@ -54,7 +68,7 @@ int save_output_default(std::string path, const ImgBuffer out)
 
     printf("saveBuf = %p, Width = %d, Height = %d. \n", out.buf, out.w, out.h);
     char p[128];
-    snprintf(p, 128, "%dx%d_%s", out.w, out.h, path.c_str());
+    snprintf(p, 128, "%d_%dx%d_%s", sm, out.w, out.h, path.c_str());
 
     FILE *fp = fopen(p, "wb");
     if(fp) {
@@ -97,15 +111,22 @@ int main(int argc, char const *argv[])
 {
     /* code */
     ImgContext_t imgc;
-    ScaleMethod sm = SCALE_NEAREST;
+    ScaleMethod sm = SCALE_UNKNOWN;
 
     memset(&imgc, 0, sizeof(ImgContext_t));
     imgc.open_input = open_input_default;
     imgc.save_output = save_output_default;
 
     //default
-    imgc.out.w = 192;
-    imgc.out.h = 108;
+
+    if(argc >= 4){
+        sm = (ScaleMethod)atoi(argv[1]);
+        imgc.out.w = atoi(argv[2]);
+        imgc.out.h = atoi(argv[3]);
+    }else{
+        printf("example:./output/ImgScale method[1:nearest 2:bilinear 3:bicubic] w h \n");
+        return -1;
+    }
 
     //setup 1: read file
     printf(">>>>>>>>>>>>> read file >>>>>>>>>>> \n");
@@ -143,7 +164,20 @@ int main(int argc, char const *argv[])
 
     //sutep 3: save buf
     printf(">>>>>>>>>>>>> save file >>>>>>>>>>> \n");
-    imgc.save_output("outBuf.rgb", imgc.out);
+    imgc.save_output("outBuf.rgb", imgc.out, sm);
+
+
+
+    //free
+    if(imgc.in.buf){
+        free(imgc.in.buf);
+        imgc.in.buf = NULL;
+    }
+
+    if(imgc.out.buf){
+        free(imgc.out.buf);
+        imgc.out.buf = NULL;
+    }
 
     return 0;
 }

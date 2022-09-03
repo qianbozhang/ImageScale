@@ -6,37 +6,9 @@
 
 #IncludeRegexTransform: 
 
-../bicubic/bicubic.h
-img_type.h
-../bicubic/img_type.h
-
-../bilinear/bilinear.h
-img_type.h
-../bilinear/img_type.h
-
-../img_type.h
-string
--
-
-../nearest/nearest.h
-img_type.h
-../nearest/img_type.h
-
-/home/zhangqianbo/Desktop/ImageScale/bicubic/bicubic.cpp
-bicubic/bicubic.h
-/home/zhangqianbo/Desktop/ImageScale/bicubic/bicubic/bicubic.h
-
 /home/zhangqianbo/Desktop/ImageScale/bicubic/bicubic.h
 img_type.h
 /home/zhangqianbo/Desktop/ImageScale/bicubic/img_type.h
-
-/home/zhangqianbo/Desktop/ImageScale/bilinear/bilinear.cpp
-bilinear/bilinear.h
-/home/zhangqianbo/Desktop/ImageScale/bilinear/bilinear/bilinear.h
-stdio.h
--
-cstring
--
 
 /home/zhangqianbo/Desktop/ImageScale/bilinear/bilinear.h
 img_type.h
@@ -53,6 +25,8 @@ stdio.h
 -
 cstring
 -
+stdlib.h
+-
 img_type.h
 /home/zhangqianbo/Desktop/ImageScale/img_type.h
 bilinear/bilinear.h
@@ -61,14 +35,6 @@ nearest/nearest.h
 /home/zhangqianbo/Desktop/ImageScale/nearest/nearest.h
 bicubic/bicubic.h
 /home/zhangqianbo/Desktop/ImageScale/bicubic/bicubic.h
-
-/home/zhangqianbo/Desktop/ImageScale/nearest/nearest.cpp
-nearest/nearest.h
-/home/zhangqianbo/Desktop/ImageScale/nearest/nearest/nearest.h
-stdio.h
--
-cstring
--
 
 /home/zhangqianbo/Desktop/ImageScale/nearest/nearest.h
 img_type.h

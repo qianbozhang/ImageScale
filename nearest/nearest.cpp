@@ -1,7 +1,7 @@
 #include "nearest/nearest.h"
 #include <stdio.h>
 #include <cstring>
-
+#include <math.h>
 
 
 int convert_nearest(const ImgBuffer in, ImgBuffer* out)
@@ -9,15 +9,10 @@ int convert_nearest(const ImgBuffer in, ImgBuffer* out)
     printf("InBuf = %p, InWidth = %d, InHeight = %d. \n", in.buf, in.w, in.h);
     printf("OutBuf = %p, OutWidth = %d, OutHeight = %d. \n", out->buf, out->w, out->h);
     Fracetion_t w_scale = { 0, 0 }, h_scale = { 0, 0 };
-    int _w = greatest_common_divisor(in.w, out->w);
-    int _h = greatest_common_divisor(in.h, out->h);
-    w_scale.num = in.w / _w;
-    w_scale.den = out->w / _w;
+    double sw= 1.0 * in.w / out->w;
+    double sh= 1.0 * in.h / out->h;
 
-    h_scale.num = in.h / _h;
-    h_scale.den = out->h / _h;
-
-    printf("nearest: width scale(%d / %d) , height scale(%d / %d) \n", w_scale.num, w_scale.den, h_scale.num, h_scale.den);
+    printf("nearest: width scale(%f) , height scale(%f) \n", sw, sh);
 
     //malloc
     int size = out->w * out->h * 3;
@@ -29,19 +24,21 @@ int convert_nearest(const ImgBuffer in, ImgBuffer* out)
     out->buf = (UInt8*) malloc ( sizeof(UInt8) * size);
     memset(out->buf, 0, size);
     //input array
-    UInt8 in_Arr[in.h][in.w * 3] = {0};
+    ImgRGB in_Arr[in.h][in.w];
     memcpy(in_Arr, in.buf, in.w * in.h * 3);
     //output array
-    UInt8 out_Arr[out->h][out->w * 3] = {0};
+    ImgRGB out_Arr[out->h][out->w];
 
     int srcX = 0, srcY = 0;
     for(int i = 0; i < out->h; i ++)
     {
-        for (int j = 0; j < out->w * 3; j ++)
+        for (int j = 0; j < out->w; j ++)
         {
-            srcX = i * w_scale.num / w_scale.den;
-            srcY = j * h_scale.num / h_scale.den;
-            out_Arr[i][j] = in_Arr[srcX][srcY];
+            srcX = round(i * 1.0 * in.h / out->h);
+            srcY = round(j * 1.0 * in.w / out->w);
+            out_Arr[i][j].r = in_Arr[srcX][srcY].r;
+            out_Arr[i][j].g = in_Arr[srcX][srcY].g;
+            out_Arr[i][j].b = in_Arr[srcX][srcY].b;
         }
     }
 

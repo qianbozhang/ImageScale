@@ -18,7 +18,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "",
 			"projects" : 
 			[
 				{
@@ -38,7 +38,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ImgScale::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ImgScale-Debug-3a003a866ea5006cccd8.json",
+					"jsonFile" : "target-ImgScale-384cdcbd4cd8d9813f6a.json",
 					"name" : "ImgScale",
 					"projectIndex" : 0
 				}

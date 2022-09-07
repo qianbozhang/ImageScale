@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.txt": "log",
+        "*.dot": "drawio",
+        "cmath": "cpp"
+    }
+}
